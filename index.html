@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gritti_Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Encriptador de Texto</h1>
+        <main id="container">
+            <section class="form box">
+                <h3>Ingrese texto: (solo minúsculas, sin acentos ni caracteres especiales)</h3><br>
+                <input autofocus class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                <input class="btn" type="submit" value="Encriptar" id="btn-encriptar" onclick="encriptarTexto()">
+                <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar" onclick="desencriptarTexto()">
+                
+            </section>
+            <section class="msg box">
+                <h3> <br> Texto Encriptado</h3><br>
+                <input class="text-input" type="text" id="msg">
+                <input class="btn" type="submit" value="Copiar" id="btn-copy" onclick="copyToClipBoard()">  
+                
+            </section>
+        </main>
+        <footer>
+            <div>
+                <h3>GRITTI-DAVID © 2022<br>Alura LATAM | Oracle</h3>            
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <canvas width="1500" height="1500"> </canvas>
+        <script src="detalle.js"></script>
+            
+    </body>
+        
+</html>
